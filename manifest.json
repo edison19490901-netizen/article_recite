@@ -1,0 +1,29 @@
+{
+  "name": "背诵宝 - 意群分块 · 艾宾浩斯复习计划 · 背诵打卡",
+  "short_name": "背诵宝",
+  "description": "从文章、演讲稿、字幕生成可背诵的意群分块材料与艾宾浩斯复习计划",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3faf7",
+  "theme_color": "#0e7c6b",
+  "icons": [
+    {
+      "src": "/static/recite.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/recite-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/static/recite-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
