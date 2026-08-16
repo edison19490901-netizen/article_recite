@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="背诵宝">
+<link rel="icon" type="image/png" href="/static/recite.png">
+<link rel="apple-touch-icon" href="/static/recite-180.png">
+<link rel="manifest" href="/manifest.json">
+<title>背诵宝 · [English (auto-generated)] How to Be Disgustingly Articulate And Well Spoken [DownSub.com].srt</title>
+<style>
+:root{
+  --teal:#0e7c6b; --teal-dark:#0a5f52; --teal-soft:#e4f4ef;
+  --amber:#d97706; --amber-soft:#fdf1dd;
+  --bg:#f3faf7; --card:#ffffff; --text:#22332f; --muted:#86a09a;
+  --line:#e2efe9; --warn:#b03a4e;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;
+  background:var(--bg); color:var(--text); font-size:15px; line-height:1.7;
+}
+.topbar{
+  position:sticky; top:0; z-index:50;
+  background:linear-gradient(120deg,var(--teal),#0f8f7b);
+  color:#fff; padding:10px 16px;
+  display:flex; align-items:center; justify-content:space-between;
+}
+.topbar .brand{font-weight:800; font-size:17px; letter-spacing:.5px;}
+.topbar .brand span{opacity:.85; font-weight:400; font-size:12px; margin-left:8px;}
+.btn-print{
+  background:rgba(255,255,255,.18); color:#fff; border:none;
+  padding:6px 12px; border-radius:8px; font-size:13px; cursor:pointer;
+}
+.btn-print:hover{background:rgba(255,255,255,.3);}
+.wrap{max-width:680px; margin:0 auto; padding:14px 12px 40px;}
+.card{
+  background:var(--card); border-radius:14px; padding:18px 16px;
+  margin-bottom:14px; box-shadow:0 1px 5px rgba(14,124,107,.07);
+}
+.card h2{font-size:15px; color:var(--teal-dark); margin-bottom:10px;}
+.hint-line{font-size:12px; color:var(--muted); margin-bottom:8px;}
+
+/* ── hero ── */
+.hero .badges{margin-bottom:8px;}
+.badge{
+  display:inline-block; font-size:11px; padding:2px 10px; border-radius:12px;
+  background:var(--teal-soft); color:var(--teal-dark); margin-right:6px; font-weight:600;
+}
+.badge.lang-en{background:#e8f4fd; color:#1a6aaa;}
+.hero h1{font-size:20px; color:var(--text); margin-bottom:4px; line-height:1.4;}
+.hero .meta{font-size:12px; color:var(--muted); margin-bottom:14px;}
+.stats{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:8px;
+}
+.stat{background:var(--bg); border-radius:10px; padding:10px 6px; text-align:center;}
+.stat b{display:block; font-size:18px; color:var(--teal-dark);}
+.stat span{font-size:11px; color:var(--muted);}
+
+/* ── steps ── */
+.steps{display:flex; gap:8px; flex-wrap:wrap;}
+.step{
+  flex:1 1 150px; background:var(--bg); border-radius:10px; padding:10px 12px; font-size:12.5px;
+}
+.step b{color:var(--teal-dark); display:block; margin-bottom:2px; font-size:13px;}
+
+/* ── warn / advice ── */
+.warn{
+  background:#fdecee; color:var(--warn); border-radius:10px; padding:10px 14px;
+  font-size:12.5px; margin-bottom:14px;
+}
+.advice{font-size:13.5px; color:#33453f; background:#fbfdfc; border-left:3px solid var(--teal); padding:8px 12px; border-radius:4px;}
+
+/* ── chunks ── */
+.chunk{
+  border:1px solid var(--line); border-radius:12px; margin-bottom:12px;
+  overflow:hidden; background:#fff;
+}
+.chunk-head{
+  display:flex; align-items:center; gap:8px; padding:8px 12px;
+  background:#f7fbf9; border-bottom:1px solid var(--line);
+}
+.chunk-no{
+  background:var(--teal); color:#fff; font-weight:700; font-size:12px;
+  padding:2px 10px; border-radius:12px;
+}
+.chunk-size{font-size:11px; color:var(--muted);}
+.chunk-head .spacer{flex:1;}
+.chunk .btn{
+  font-size:12px; border:none; border-radius:8px; padding:5px 10px; cursor:pointer;
+  background:var(--teal-soft); color:var(--teal-dark); font-weight:600;
+}
+.chunk .btn:hover{background:#d3ece4;}
+.chunk .btn.btn-amber{background:var(--amber-soft); color:var(--amber);}
+.chunk .btn.btn-amber:hover{background:#fae6c4;}
+.chunk-text{padding:12px 14px; font-size:16.5px; line-height:1.95;}
+.chunk .btn-blank{background:var(--amber-soft); color:var(--amber);}
+.chunk .btn-blank:hover{background:#fae6c4;}
+.chunk.blanked .chunk-text{display:none;}
+.chunk.blanked .blank-cover{display:flex;}
+.blank-cover{
+  display:none; flex-direction:column; align-items:center; justify-content:center;
+  padding:22px 14px; gap:10px; color:var(--muted); font-size:13px;
+  background:repeating-linear-gradient(45deg,#f6faf8,#f6faf8 8px,#eef6f2 8px,#eef6f2 16px);
+}
+.blank-cover .lock{font-size:22px;}
+.hint-card{display:none; padding:10px 14px 12px; background:var(--amber-soft); border-top:1px dashed #f0d9a8;}
+.chunk.blanked .hint-card{display:block;}
+.hint-card .hint-label{font-size:11px; color:var(--amber); font-weight:700; margin-bottom:4px;}
+.hint-card .hint-kw{font-size:14px; color:#7a4a00; font-weight:600; margin-bottom:6px;}
+.hint-card .hint-letters{
+  font-size:13px; color:#9a7b4f; letter-spacing:1.5px; line-height:1.9;
+  border-top:1px dashed #f0d9a8; padding-top:6px;
+}
+.chunk.reveal-hint .hint-card{display:block;}
+
+/* ── review table ── */
+.table-scroll{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+.review-table{border-collapse:collapse; width:100%; font-size:12px; min-width:560px;}
+.review-table th,.review-table td{
+  border:1px solid var(--line); padding:6px 8px; text-align:center; white-space:nowrap;
+}
+.review-table th{background:var(--teal-soft); color:var(--teal-dark); font-weight:700;}
+.review-table td:first-child{font-weight:700; color:var(--teal-dark); background:#f7fbf9;}
+.review-table .lbl{display:block; color:var(--muted); font-size:10px;}
+
+/* ── daily plan ── */
+.cpd-row{display:flex; align-items:center; gap:8px; margin-bottom:12px; flex-wrap:wrap;}
+.cpd-row label{font-size:13px; color:var(--text);}
+.cpd-row select{
+  padding:6px 8px; border:1px solid var(--line); border-radius:8px;
+  background:#fff; color:var(--teal-dark); font-size:14px; font-weight:700;
+}
+.progress{
+  flex:1; min-width:80px; height:8px; background:var(--line); border-radius:6px; overflow:hidden;
+}
+.progress-fill{height:100%; width:0%; background:linear-gradient(90deg,var(--teal),#14a58f); transition:width .3s;}
+#progress-text{font-size:12px; color:var(--muted); white-space:nowrap;}
+.day-card{
+  border:1px solid var(--line); border-radius:12px; margin-bottom:10px; overflow:hidden;
+}
+.day-card.today{border-color:var(--teal); box-shadow:0 0 0 1px var(--teal);}
+.day-head{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:8px 12px; background:#f7fbf9;
+}
+.day-no{font-weight:800; color:var(--teal-dark); font-size:14px;}
+.day-date{font-size:12px; color:var(--muted);}
+.day-row{display:flex; align-items:center; gap:6px; padding:6px 12px; flex-wrap:wrap;}
+.day-row + .day-row{border-top:1px dashed var(--line);}
+.row-label{font-size:11px; font-weight:700; padding:2px 8px; border-radius:10px; flex-shrink:0;}
+.row-label.new{background:var(--teal-soft); color:var(--teal-dark);}
+.row-label.review{background:var(--amber-soft); color:var(--amber);}
+.chip{
+  border:1px solid var(--line); background:#fff; color:var(--text);
+  border-radius:10px; padding:4px 10px; font-size:12.5px; cursor:pointer;
+  transition:all .15s;
+}
+.chip:hover{border-color:var(--teal);}
+.chip.on.new{background:var(--teal); border-color:var(--teal); color:#fff;}
+.chip.on.review{background:var(--amber); border-color:var(--amber); color:#fff;}
+.chip.done{opacity:.55; text-decoration:line-through;}
+.empty-day{font-size:12px; color:var(--muted); padding:8px 12px;}
+
+/* ── footer ── */
+.footer{text-align:center; color:#9ab5ad; font-size:11px; padding:10px 0 30px;}
+
+@media print{
+  .topbar,.cpd-row,.btn,.no-print{display:none !important;}
+  body{background:#fff; font-size:12px;}
+  .card{box-shadow:none; border:1px solid #ddd; break-inside:avoid;}
+  .chunk-text{display:block !important;}
+  .hint-card,.blank-cover{display:none !important;}
+  .review-table th{background:#f0f0f0 !important;}
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">📖 背诵宝<span>English · 字幕</span></div>
+  <button class="btn-print" onclick="window.print()">🖨 打印/存 PDF</button>
+</div>
+
+<div class="wrap">
+
+  <!-- ── 头部 ── -->
+  <section class="card hero">
+    <div class="badges">
+      <span class="badge lang-en">🌐 English</span>
+      <span class="badge">📄 字幕</span>
+      <span class="badge">🗓 生成于 2026-08-16</span>
+    </div>
+    <h1>[English (auto-generated)] How to Be Disgustingly Articulate And Well Spoken [DownSub.com].srt</h1>
+    <div class="meta">
+      3313 字 · 37 块 · 预计背诵 37 分钟
+      
+    </div>
+    <div class="stats">
+      <div class="stat"><b>3313</b><span>总字数</span></div>
+      <div class="stat"><b>37</b><span>意群块</span></div>
+      <div class="stat"><b>37</b><span>背诵/分钟</span></div>
+      <div class="stat"><b>185</b><span>复习次数</span></div>
+    </div>
+  </section>
+
+  <!-- ── 怎么背 ── -->
+  <section class="card">
+    <h2>📖 三步背诵法</h2>
+    <div class="steps">
+      <div class="step"><b>① 看提示卡</b>先读每块下方的 💡 提示卡，用关键词/首字回忆内容</div>
+      <div class="step"><b>② 遮住自测</b>点「🙈 遮住自测」把原文盖住，看着提示卡试着背出来</div>
+      <div class="step"><b>③ 按时复习</b>按下方艾宾浩斯清单打卡，第 1/2/4/7/15 天复习巩固</div>
+    </div>
+  </section>
+
+  
+  <section class="card">
+    <h2>💡 背诵建议</h2>
+    <div class="advice">This material is a spoken transcript with many long, run-on sentences and interjections (e.g., &#39;damn it, Peter&#39;, &#39;Wrong click, Peter&#39;) that can trip you up. Practice chunking each block into natural breath groups, and use the hint keywords as memory anchors. Pay special attention to the numbered lists (capture, structure, practice, iterate) and the POP framework (pause, one thought, proof) – these are the structural skeleton of the talk. Recite aloud to get the rhythm of the conversational tone.</div>
+  </section>
+  
+
+  
+
+  <!-- ── 原文分块 ── -->
+  <section class="card" id="chunks">
+    <h2>🧱 原文分块（37 块）</h2>
+    <p class="hint-line">每块是完整语义单元。先通读，再逐块「遮住自测」。</p>
+    
+    <article class="chunk" id="chunk-1">
+      <div class="chunk-head">
+        <span class="chunk-no">块 1</span>
+        <span class="chunk-size">80 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">How do you articulate your thoughts clearly without overthinking every single word? You know that moment when you&#39;re talking halfway through your sentence and you don&#39;t even know what point you&#39;re trying to make. Hi, my name&#39;s Vin. I&#39;ve coached millions of people to improve their communication and the three frameworks I&#39;m going to share with you in this video will help you sound well-spoken and more articulate in professional and personal conversations.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Introduction and purpose</div>
+        <div class="hint-letters">H D Y A Y T C W O E S W Y K T M W Y T H T Y S A Y D E K W P Y T T M H M N V I C M O P T I T C A T T F I G T S W Y I T V W H Y S W S A M A I P A P C</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-2">
+      <div class="chunk-head">
+        <span class="chunk-no">块 2</span>
+        <span class="chunk-size">100 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And I&#39;ll break it into the three most common scenarios that play out for most people. The first is when you do know your stuff, but you can&#39;t explain it simply. The second is when you don&#39;t know much about what&#39;s being discussed, but you don&#39;t want to come across completely clueless. And the third, which is the most common scenario, especially at work, is when you actually do know the answer, but the pressure of being in front of your peers and your leaders causes your brain to scramble and then you go blank.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Three scenarios</div>
+        <div class="hint-letters">A I B I I T T M C S T P O F M P T F I W Y D K Y S B Y C E I S T S I W Y D K M A W B D B Y D W T C A C C A T T W I T M C S E A W I W Y A D K T A B T P O B I F O Y P A Y L C Y B T S A T Y G B</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-3">
+      <div class="chunk-head">
+        <span class="chunk-no">块 3</span>
+        <span class="chunk-size">66 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">I used to think, &#34;Oh, articulation? That&#39;s a speaking problem.&#34; Well, it&#39;s not. Messy words come from messy thinking. So, the real skill isn&#39;t just learning how to talk better, it&#39;s learning how to think more clearly. And when you&#39;re put on the spot, frameworks will help you think more clearly so that you can sound more well-spoken and articulate.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Messy thinking</div>
+        <div class="hint-letters">I U T T O A T A S P W I N M W C F M T S T R S I J L H T T B I L H T T M C A W Y P O T S F W H Y T M C S T Y C S M W S A A</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-4">
+      <div class="chunk-head">
+        <span class="chunk-no">块 4</span>
+        <span class="chunk-size">80 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">So, let&#39;s start with scenario one, which is when you&#39;re actually knowledgeable on the topic, but you can&#39;t articulate well. When I run my communication classes and workshops, a large portion of my students fall into this specific category. They&#39;re engineers, doctors, and lawyers. They&#39;re highly knowledgeable individuals, but when I ask them the reason why they joined my class, the number one reason I hear is, &#34;Vin, I struggle to explain my ideas clearly.&#34;</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Scenario one: knowledgeable but can&#39;t articulate</div>
+        <div class="hint-letters">S L S W S O W I W Y A K O T T B Y C A W W I R M C C A W A L P O M S F I T S C T E D A L T H K I B W I A T T R W T J M C T N O R I H I V I S T E M I C</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-5">
+      <div class="chunk-head">
+        <span class="chunk-no">块 5</span>
+        <span class="chunk-size">67 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">You&#39;ve probably been in this scenario as well. You&#39;re trying to explain the topic you know well, but you overcomplicate it. You go in circles and you can slowly start to see the other person look more and more confused. And the worst part is, you leave the conversation thinking, &#34;Maybe maybe I don&#39;t understand my topic as well as I thought I did.&#34;</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Overcomplicating and confusion</div>
+        <div class="hint-letters">Y P B I T S A W Y T T E T T Y K W B Y O I Y G I C A Y C S S T S T O P L M A M C A T W P I Y L T C T M M I D U M T A W A I T I D</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-6">
+      <div class="chunk-head">
+        <span class="chunk-no">块 6</span>
+        <span class="chunk-size">95 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">But here&#39;s what&#39;s actually going on. You know your topic well because you&#39;ve studied it a lot, but you can&#39;t explain it to someone well, because you haven&#39;t explained it a lot. That&#39;s all that it is. Learning and explaining are two completely separate skills. You&#39;ve done thousands of hours of one and almost none of the other. That&#39;s why the world is full of wonderful experts who actually can&#39;t teach. They struggle to pass on their knowledge to others without boring them or losing them.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Learning vs explaining</div>
+        <div class="hint-letters">B H W A G O Y K Y T W B Y S I A L B Y C E I T S W B Y H E I A L T A T I I L A E A T C S S Y D T O H O O A A N O T O T W T W I F O W E W A C T T S T P O T K T O W B T O L T</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-7">
+      <div class="chunk-head">
+        <span class="chunk-no">块 7</span>
+        <span class="chunk-size">70 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">So, before I share with you the framework, the key point I want you to take away here is that the best teachers, the best explainers, they have mastered the art of distillation. They&#39;re able to distill the complex and make it simple for you to understand. In other words, they&#39;ve learned to take their messy thoughts and deliver it in a clear and concise and coherent way.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Art of distillation</div>
+        <div class="hint-letters">S B I S W Y T F T K P I W Y T T A H I T T B T T B E T H M T A O D T A T D T C A M I S F Y T U I O W T L T T T M T A D I I A C A C A C W</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-8">
+      <div class="chunk-head">
+        <span class="chunk-no">块 8</span>
+        <span class="chunk-size">66 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">So, when I want to learn how to explain anything better, here&#39;s the framework that I use. It&#39;s a simple four-step loop. The first part of it is capture. After that, you&#39;ve got structure. Then after that, you&#39;ve got practice. And then finally, you&#39;ve got iterate. And then it&#39;s back to capture all over again, therefore being a loop.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Four-step loop</div>
+        <div class="hint-letters">S W I W T L H T E A B H T F T I U I A S F S L T F P O I I C A T Y G S T A T Y G P A T F Y G I A T I B T C A O A T B A L</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-9">
+      <div class="chunk-head">
+        <span class="chunk-no">块 9</span>
+        <span class="chunk-size">80 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Let&#39;s start with capture, number one. Which is what? It&#39;s writing. And I know the second I say writing, half of you are checking out now, but stick with me here, because this is what helps you think about something more clearly. When a thought is in your head, it&#39;s floating around, it&#39;s jumbled, it&#39;s disjointed, and it&#39;s all over the place. And it&#39;s almost impossible to shape something you can&#39;t see.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Capture: writing</div>
+        <div class="hint-letters">L S W C N O W I W I W A I K T S I S W H O Y A C O N B S W M H B T I W H Y T A S M C W A T I I Y H I F A I J I D A I A O T P A I A I T S S Y C S</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-10">
+      <div class="chunk-head">
+        <span class="chunk-no">块 10</span>
+        <span class="chunk-size">99 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">But the moment you write it on paper or you type it into a document, you&#39;re forced to turn the feelings into words. And now the thought is sitting there right in front of you, where you can actually look at it. The art of writing is the art of making your thoughts visible. And to give you a real example, every single week I share a newsletter to my email subscribers called The Weekly V. We&#39;ve actually got 2 million readers, and we get a 50% open rate week to week and that&#39;s just crazy.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Writing makes thoughts visible</div>
+        <div class="hint-letters">B T M Y W I O P O Y T I I A D Y F T T T F I W A N T T I S T R I F O Y W Y C A L A I T A O W I T A O M Y T V A T G Y A R E E S W I S A N T M E S C T W V W A G M R A W G A O R W T W A T J C</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-11">
+      <div class="chunk-head">
+        <span class="chunk-no">块 11</span>
+        <span class="chunk-size">96 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">But the reason this happens and the reason why I do it is because it forces me to capture my thoughts and then write about my experiences in a way that becomes helpful to our readers. So here are the two steps to get your thoughts into writing. The first one is just ask yourself, what&#39;s the one thing I want to get better at explaining? And then once you&#39;ve got that topic, the second thing is, well, write down how you currently explain it. Write it out exactly as you would explain it.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Two steps to writing</div>
+        <div class="hint-letters">B T R T H A T R W I D I I B I F M T C M T A T W A M E I A W T B H T O R S H A T T S T G Y T I W T F O I J A Y W T O T I W T G B A E A T O Y G T T T S T I W W D H Y C E I W I O E A Y W E I</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-12">
+      <div class="chunk-head">
+        <span class="chunk-no">块 12</span>
+        <span class="chunk-size">89 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And at first, your writing and explaining might not be in the optimal order, but that&#39;s what the next step is for, structure. Because once you get all of your thoughts about a specific topic down on paper, you can now see the pieces and go, &#34;Ah, I shouldn&#39;t say that first. I should have said this first. Actually, they need to understand this before any of that&#39;s going to make sense.&#34; You can only put the puzzle together once you can see the puzzle pieces.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Structure: see the pieces</div>
+        <div class="hint-letters">A A F Y W A E M N B I T O O B T W T N S I F S B O Y G A O Y T A A S T D O P Y C N S T P A G A I S S T F I S H S T F A T N T U T B A O T G T M S Y C O P T P T O Y C S T P P</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-13">
+      <div class="chunk-head">
+        <span class="chunk-no">块 13</span>
+        <span class="chunk-size">81 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">So now that you&#39;ve written out how you currently explain the specific topic, look at the puzzle pieces. Does it make sense? Is it too long? Is it easy to understand? Is it too much jargon? Is there an analogy, a metaphor, or a simile that you can use to simplify it? Give yourself permission here to play. Add some new pieces. Reorder the pieces. So it&#39;ll be engaging enough and simple enough that even a teenager could understand.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Evaluate and play with pieces</div>
+        <div class="hint-letters">S N T Y W O H Y C E T S T L A T P P D I M S I I T L I I E T U I I T M J I T A A A M O A S T Y C U T S I G Y P H T P A S N P R T P S I B E E A S E T E A T C U</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-14">
+      <div class="chunk-head">
+        <span class="chunk-no">块 14</span>
+        <span class="chunk-size">70 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Then the next step is what separates great thinkers from great speakers. Because without practice, without you saying it out loud, all of your brilliance, your knowledge, your ideas, it just stays on the page. So here&#39;s what I want you to do. Turn on your camera. Could be your phone. Just hit record and start talking through the idea with the new structure that you&#39;ve written down.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Practice out loud</div>
+        <div class="hint-letters">T T N S I W S G T F G S B W P W Y S I O L A O Y B Y K Y I I J S O T P S H W I W Y T D T O Y C C B Y P J H R A S T T T I W T N S T Y W D</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-15">
+      <div class="chunk-head">
+        <span class="chunk-no">块 15</span>
+        <span class="chunk-size">95 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And as you practice this out loud, you&#39;ll get a sense of what it feels like in your mouth, quite literally. And as you do that, you&#39;ll be able to identify where things flow, where they don&#39;t. When I&#39;m scripting and writing these YouTube videos, for example, the moment I sit down and practice saying it out loud, I can immediately pick up the parts that don&#39;t logically flow well. And the more you do this, the better you&#39;ll get at simplification, because that&#39;s what great communicators do.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Feel the flow</div>
+        <div class="hint-letters">A A Y P T O L Y G A S O W I F L I Y M Q L A A Y D T Y B A T I W T F W T D W I S A W T Y V F E T M I S D A P S I O L I C I P U T P T D L F W A T M Y D T T B Y G A S B T W G C D</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-16">
+      <div class="chunk-head">
+        <span class="chunk-no">块 16</span>
+        <span class="chunk-size">93 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And the final step here is iterate. And what I mean by this is you now have to listen back to the video you just recorded and ask yourself, was it clear? Was it concise? Was it coherent? Identify where the explanation gets too complex or messy. And then you go back to capture and you start the whole loop again. This might mean making it shorter, changing some of the pieces, restructuring again, and sometimes it means throwing out the whole damn thing and chucking it in the bin, starting from scratch.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Iterate: listen and improve</div>
+        <div class="hint-letters">A T F S H I I A W I M B T I Y N H T L B T T V Y J R A A Y W I C W I C W I C I W T E G T C O M A T Y G B T C A Y S T W L A T M M M I S C S O T P R A A S I M T O T W D T A C I I T B S F S</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-17">
+      <div class="chunk-head">
+        <span class="chunk-no">块 17</span>
+        <span class="chunk-size">124 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">This is the work required if you want to be an influential communicator. This is the practice required. That&#39;s how you stop being the expert that nobody understands and you start becoming the expert that everybody understands. And by the way, if you want to learn more frameworks to improve your ability to articulate well, especially when you&#39;re put on the spot, make sure you click the link in the description or you can scan the QR code that&#39;s on screen for my free 2-hour training, where I&#39;m going to teach you three powerful communication frameworks to filter your thinking through so that it helps you come across more well-spoken. So, check it out. It&#39;s completely free.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Work and free training</div>
+        <div class="hint-letters">T I T W R I Y W T B A I C T I T P R T H Y S B T E T N U A Y S B T E T E U A B T W I Y W T L M F T I Y A T A W E W Y P O T S M S Y C T L I T D O Y C S T Q C T O S F M F H T W I G T T Y T P C F T F Y T T S T I H Y C A M W S S C I O I C F</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-18">
+      <div class="chunk-head">
+        <span class="chunk-no">块 18</span>
+        <span class="chunk-size">96 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Now, the next scenario is the complete opposite. This is where you&#39;re in a conversation and then the topic changes to one you don&#39;t know much about. What should you do in this scenario? Should you pretend you know and then fake it? Or should you just say, &#34;I don&#39;t know.&#34;? These are two great questions. Let me tell you what I do. Number one, I name what I know. Number two, I name what I&#39;m still working out. And then, number three, I ask a question that moves the conversation forward.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Scenario two: unknown topic</div>
+        <div class="hint-letters">N T N S I T C O T I W Y I A C A T T T C T O Y D K M A W S Y D I T S S Y P Y K A T F I O S Y J S I D K T A T G Q L M T Y W I D N O I N W I K N T I N W I S W O A T N T I A A Q T M T C F</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-19">
+      <div class="chunk-head">
+        <span class="chunk-no">块 19</span>
+        <span class="chunk-size">129 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Let me show you what that sounds like. &gt;&gt; So, what do you think about all this AI stuff? Do you think it&#39;s going to take over everyone&#39;s jobs? What I know is that AI has gotten scary good at the narrow and repetitive stuff, the tasks that follow really clear rules. And the part that I&#39;m I&#39;m still trying to work out myself is where&#39;s the limit? Because every time I try to get it to do something difficult, it often fails. And can I ask what&#39;s your take? Do you see it as a tool that replaces just tasks or do you think it&#39;s gradually going to replace people in their roles? Maybe it&#39;s going to replace your role, Peter.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Example: AI discussion</div>
+        <div class="hint-letters">L M S Y W T S L S W D Y T A A T A S D Y T I G T T O E J W I K I T A H G S G A T N A R S T T T F R C R A T P T I I S T T W O M I W T L B E T I T T G I T D S D I O F A C I A W Y T D Y S I A A T T R J T O D Y T I G G T R P I T R M I G T R Y R P</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-20">
+      <div class="chunk-head">
+        <span class="chunk-no">块 20</span>
+        <span class="chunk-size">83 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">No, no, no, don&#39;t get me wrong. I&#39;m not going to fire Peter and replace him with AI. Why? Well, because can AI warm my seat for me every morning before I get in? Can AI make me my coffee exactly how I want it at 8:00 a.m. on the dot when I arrive in the office and place it in my hand the moment I snap my fingers? Didn&#39;t snap my fingers, Pete. Mate, that was premature.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Humorous rebuttal</div>
+        <div class="hint-letters">N N N D G M W I N G T F P A R H W A W W B C A W M S F M E M B I G I C A M M M C E H I W I A A M O T D W I A I T O A P I I M H T M I S M F D S M F P M T W P</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-21">
+      <div class="chunk-head">
+        <span class="chunk-no">块 21</span>
+        <span class="chunk-size">96 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Did you catch what happened in the skit though? Even though someone asked me to speak on a topic that I didn&#39;t know much about, I was still able to come across articulate, thoughtful, and competent by following the framework I shared right here. Now, here&#39;s an unexpected thing you can do that will increase your relatability, likability, and even respect. This is for when you get asked a question and you don&#39;t know the answer. In these moments, contrary to popular belief, it&#39;s actually okay to say I don&#39;t know.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Framework works and saying I don&#39;t know</div>
+        <div class="hint-letters">D Y C W H I T S T E T S A M T S O A T T I D K M A I W S A T C A A T A C B F T F I S R H N H A U T Y C D T W I Y R L A E R T I F W Y G A A Q A Y D K T A I T M C T P B I A O T S I D K</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-22">
+      <div class="chunk-head">
+        <span class="chunk-no">块 22</span>
+        <span class="chunk-size">99 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">One caveat here though, you must have previous to this question already have demonstrated value and credibility. If these things have already been established and you say the words I don&#39;t know, it humanizes you. I&#39;ve done this before in my workshops. I don&#39;t know the answer to that. And I believe it&#39;s very important for me to clearly state that when I don&#39;t know it. So, I I don&#39;t I&#39;m not qualified to answer that. &gt;&gt; That&#39;s actually That&#39;s a good answer. &gt;&gt; Oh, okay. I thought it was so yeah.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Caveat: credibility</div>
+        <div class="hint-letters">O C H T Y M H P T T Q A H D V A C I T T H A B E A Y S T W I D K I H Y I D T B I M W I D K T A T T A I B I V I F M T C S T W I D K I S I I D I N Q T A T T A T A G A O O I T I W S Y</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-23">
+      <div class="chunk-head">
+        <span class="chunk-no">块 23</span>
+        <span class="chunk-size">102 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">I used to believe that saying I don&#39;t know would make people respect me less. But like you saw in the video, because I&#39;ve already added value that morning, when I said the words I don&#39;t know in a situation where I actually didn&#39;t know, people respected me more. And there&#39;s another benefit. It takes an enormous amount of pressure off you when you know you can say I don&#39;t know. Because most people walk into a client meeting, a presentation, or a conversation with their boss believing they need to have an answer for everything.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Benefits of saying I don&#39;t know</div>
+        <div class="hint-letters">I U T B T S I D K W M P R M L B L Y S I T V B I A A V T M W I S T W I D K I A S W I A D K P R M M A T A B I T A E A O P O Y W Y K Y C S I D K B M P W I A C M A P O A C W T B B T N T H A A F E</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-24">
+      <div class="chunk-head">
+        <span class="chunk-no">块 24</span>
+        <span class="chunk-size">95 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">But when you give yourself permission to say I don&#39;t know, you&#39;re no longer trying to be ChatGPT. You can slow down, acknowledge what you do know, and because of this framework here, you can now explain it clearly, which increases credibility. So that when there&#39;s something you don&#39;t know, saying I don&#39;t know doesn&#39;t ruin your reputation. In actual reality, it increases the trust and respect that people have for you. Because they know when you don&#39;t know, you&#39;re not going to outright lie to them.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Permission and credibility</div>
+        <div class="hint-letters">B W Y G Y P T S I D K Y N L T T B C Y C S D A W Y D K A B O T F H Y C N E I C W I C S T W T S Y D K S I D K D R Y R I A R I I T T A R T P H F Y B T K W Y D K Y N G T O L T T</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-25">
+      <div class="chunk-head">
+        <span class="chunk-no">块 25</span>
+        <span class="chunk-size">76 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And now for the final scenario, one where we are all too familiar with. This is when you know your stuff, but when someone asks you a question, the pressure of being in the spotlight and needing to answer in the moment causes you to go completely blank. And this has happened to me more than most people on the biggest stages around the world, so I feel qualified to give you some real advice here.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Scenario three: going blank</div>
+        <div class="hint-letters">A N F T F S O W W A A T F W T I W Y K Y S B W S A Y A Q T P O B I T S A N T A I T M C Y T G C B A T H H T M M T M P O T B S A T W S I F Q T G Y S R A H</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-26">
+      <div class="chunk-head">
+        <span class="chunk-no">块 26</span>
+        <span class="chunk-size">76 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">It&#39;s like when you accidentally open all the browser tabs in one click causing your browser to lag. Same thing with your brain. When someone asks you a question and all of your thoughts fire at once, damn it, Peter. That wasn&#39;t a coffee click. You&#39;ve got to hear the difference. Learn to hear the difference. That&#39;s a coffee click. That&#39;s a click for emphasis. Come on, mate. Get it together.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Browser tabs analogy</div>
+        <div class="hint-letters">I L W Y A O A T B T I O C C Y B T L S T W Y B W S A Y A Q A A O Y T F A O D I P T W A C C Y G T H T D L T H T D T A C C T A C F E C O M G I T</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-27">
+      <div class="chunk-head">
+        <span class="chunk-no">块 27</span>
+        <span class="chunk-size">73 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Now, as I was saying, all your thoughts just fire at once, and then as a result, your brain can&#39;t decide which one to grab and where to start. And from the outside, it makes you look incompetent if you freeze for too long. So then as a result, you feel the pressure to speak, and then you start speaking your thoughts out loud causing you to go in circles and ramble.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Thoughts fire at once</div>
+        <div class="hint-letters">N A I W S A Y T J F A O A T A A R Y B C D W O T G A W T S A F T O I M Y L I I Y F F T L S T A A R Y F T P T S A T Y S S Y T O L C Y T G I C A R</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-28">
+      <div class="chunk-head">
+        <span class="chunk-no">块 28</span>
+        <span class="chunk-size">81 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">This is the framework you need to remember in those moments, and it&#39;s called POP. P O P. And the first one stands for pause. I know how counterintuitive this feels because again, you feel like you should respond immediately. Wrong click, Peter. But you feel like you should respond immediately to show how knowledgeable you are. But that doesn&#39;t work. What you need is to take a couple of seconds to think about your response before giving it.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">POP: pause</div>
+        <div class="hint-letters">T I T F Y N T R I T M A I C P P O P A T F O S F P I K H C T F B A Y F L Y S R I W C P B Y F L Y S R I T S H K Y A B T D W W Y N I T T A C O S T T A Y R B G I</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-29">
+      <div class="chunk-head">
+        <span class="chunk-no">块 29</span>
+        <span class="chunk-size">75 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And you&#39;ll be surprised how giving yourself an extra moment or two to think actually helps you get more clarity on your thoughts. And you might think this is weird, but trust me, it&#39;s only weird if you make it weird. Watch this example of me at one of my workshops where someone&#39;s asking me a question. I want you to count how many seconds I paused for while I was thinking.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Power of pause</div>
+        <div class="hint-letters">A Y B S H G Y A E M O T T T A H Y G M C O Y T A Y M T T I W B T M I O W I Y M I W W T E O M A O O M W W S A M A Q I W Y T C H M S I P F W I W T</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-30">
+      <div class="chunk-head">
+        <span class="chunk-no">块 30</span>
+        <span class="chunk-size">81 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">&gt;&gt; Are there any stories you have yet to share with us? &gt;&gt; Mhm. &gt;&gt; That you would really like to share that would kind of nurture a part of your heart. &gt;&gt; Gosh. Now, did I come across awkward? Did I come across like I was panicking and freaking out and freezing? Or did I come across as if I was someone who was putting a lot of thought into their response? That&#39;s the power of the pause when you do it confidently.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Example of pause</div>
+        <div class="hint-letters">A T A S Y H Y T S W U M T Y W R L T S T W K O N A P O Y H G N D I C A A D I C A L I W P A F O A F O D I C A A I I W S W W P A L O T I T R T T P O T P W Y D I C</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-31">
+      <div class="chunk-head">
+        <span class="chunk-no">块 31</span>
+        <span class="chunk-size">99 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And you know what? Even though I took that long to pause, guess what happened after that? Have a look at this. Would you all mind having a chat amongst yourselves for just a couple of minutes while I really sit and think with this? Is that okay? Okay, I&#39;ll just I&#39;ll just sit and have a think. &gt;&gt; Yes, that&#39;s right. I asked for more time because I have confidence that if you give me an extra 2 minutes, I&#39;m going to be able to give you an incredible amount of value in my response.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Asking for more time</div>
+        <div class="hint-letters">A Y K W E T I T T L T P G W H A T H A L A T W Y A M H A C A Y F J A C O M W I R S A T W T I T O O I J I J S A H A T Y T R I A F M T B I H C T I Y G M A E M I G T B A T G Y A I A O V I M R</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-32">
+      <div class="chunk-head">
+        <span class="chunk-no">块 32</span>
+        <span class="chunk-size">100 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">Now, the next part of the framework is O. And what does O stand for? Stands for one thought. Begin your response with the sentence, &#34;The one thought that comes to mind is&#34; What this does for you is that it forces your brain to focus just on one point to share instead of trying to share every single point that comes to mind. And by doing this, it allows you to respond faster because of the focus, and not get stuck in analysis paralysis. This is what causes people to freeze and worse, ramble. Oh, it&#39;s the worst.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">O: one thought</div>
+        <div class="hint-letters">N T N P O T F I O A W D O S F S F O T B Y R W T S T O T T C T M I W T D F Y I T I F Y B T F J O O P T S I O T T S E S P T C T M A B D T I A Y T R F B O T F A N G S I A P T I W C P T F A W R O I T W</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-33">
+      <div class="chunk-head">
+        <span class="chunk-no">块 33</span>
+        <span class="chunk-size">82 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And what this does for the listener is it tells them you&#39;ve actually got a lot of thoughts on this, but you&#39;re deliberately selecting one to share. And the final P is proof. Once you&#39;ve shared your thought, you now back up that thought with an example. It could be a story, a result, an observation, a statistic. This helps solidify and add more credibility to the thought that you just shared. Now, let me give you an example.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">P: proof</div>
+        <div class="hint-letters">A W T D F T L I I T T Y A G A L O T O T B Y D S O T S A T F P I P O Y S Y T Y N B U T T W A E I C B A S A R A O A S T H S A A M C T T T T Y J S N L M G Y A E</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-34">
+      <div class="chunk-head">
+        <span class="chunk-no">块 34</span>
+        <span class="chunk-size">121 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">&gt;&gt; Vin, I&#39;m curious. What are some clever ways for us to get our YouTube subscribers to hit subscribe? &gt;&gt; Mhm. &gt;&gt; Any ideas? &gt;&gt; You know what? The one thought that comes to mind is that we can create a skit where we passively speak to the audience about the importance of why they should subscribe. Let me give you an example. Because when we do it directly to the camera, people tend to resist because they don&#39;t want to be told what to do. That&#39;s why we should indirectly, through a skit, speak to the subconscious to get them to subscribe. I mean, it&#39;s subtle, it&#39;s clever, it&#39;s completely invisible. They&#39;re not going to notice it.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Example: subscribe skit</div>
+        <div class="hint-letters">V I C W A S C W F U T G O Y S T H S M A I Y K W T O T T C T M I T W C C A S W W P S T T A A T I O W T S S L M G Y A E B W W D I D T T C P T T R B T D W T B T W T D T W W S I T A S S T T S T G T T S I M I S I C I C I T N G T N I</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-35">
+      <div class="chunk-head">
+        <span class="chunk-no">块 35</span>
+        <span class="chunk-size">94 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">&gt;&gt; Yeah, you mean you mean just like this, right? &gt;&gt; No, you idiot. That&#39;s way too obvious. You know what to do. You see, pop Pop is one of the many frameworks that exist to help you articulate your thoughts more clearly. So, if you want to learn more of my favorite communication frameworks, make sure you check out the free training I mentioned earlier in the video. It&#39;s in the description and the QR code is here. It&#39;s going to help you create more structure and clarity every time you speak.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">POP framework and free training</div>
+        <div class="hint-letters">Y Y M Y M J L T R N Y I T W T O Y K W T D Y S P P I O O T M F T E T H Y A Y T M C S I Y W T L M O M F C F M S Y C O T F T I M E I T V I I T D A T Q C I H I G T H Y C M S A C E T Y S</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-36">
+      <div class="chunk-head">
+        <span class="chunk-no">块 36</span>
+        <span class="chunk-size">102 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">So, here&#39;s my challenge to you this week. Pick a topic you know a lot about and take it through the first framework. Capture it, write it down, everything that comes to mind. Then, when your thoughts are visible, restructure it, remix it, add stuff, mix it all around. Most people stop there, but without the next step of practice and reading your thoughts out loud, you&#39;ll never be able to explain anything simply and articulately. And finally, iterate. That&#39;s how you start practicing the habit of thinking and speaking clearly. You can&#39;t do one without the other.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Challenge: practice framework</div>
+        <div class="hint-letters">S H M C T Y T W P A T Y K A L A A T I T T F F C I W I D E T C T M T W Y T A V R I R I A S M I A A M P S T B W T N S O P A R Y T O L Y N B A T E A S A A A F I T H Y S P T H O T A S C Y C D O W T O</div>
+      </div>
+    </article>
+    
+    <article class="chunk" id="chunk-37">
+      <div class="chunk-head">
+        <span class="chunk-no">块 37</span>
+        <span class="chunk-size">102 字</span>
+        <span class="spacer"></span>
+        <button class="btn btn-hint" onclick="this.closest('.chunk').classList.toggle('reveal-hint')">💡 提示</button>
+        <button class="btn btn-blank" onclick="toggleBlank(this)">🙈 遮住自测</button>
+      </div>
+      <p class="chunk-text">And I want to leave you with this message. If you can&#39;t communicate clearly right now, and if you don&#39;t see yourself as a great communicator right now, I want you to remember how you currently communicate is just a series of behaviors that you can improve over time by practicing the things you learned in this video. You&#39;re not stuck with the way you communicate. So, don&#39;t be so attached to who you are in the present that you don&#39;t give the future version of you a chance. I&#39;ll see you in the next video.</p>
+      <div class="blank-cover"><span class="lock">🔒</span>正在自测……试着背出这一块</div>
+      <div class="hint-card">
+        <div class="hint-label">💡 提示卡</div>
+        <div class="hint-kw">Final message</div>
+        <div class="hint-letters">A I W T L Y W T M I Y C C C R N A I Y D S Y A A G C R N I W Y T R H Y C C I J A S O B T Y C I O T B P T T Y L I T V Y N S W T W Y C S D B S A T W Y A I T P T Y D G T F V O Y A C I S Y I T N V</div>
+      </div>
+    </article>
+    
+  </section>
+
+  <!-- ── 逐块复习表 ── -->
+  <section class="card" id="review">
+    <h2>🗓 逐块复习表</h2>
+    <p class="hint-line">块 1…背完后，在以下间隔日复习（间隔：D+1 / D+2 / D+4 / D+7 / D+15）。</p>
+    <div class="table-scroll">
+      <table class="review-table">
+        <thead>
+          <tr>
+            <th>块</th><th>背诵日</th>
+            <th>复习 D+1</th><th>复习 D+2</th><th>复习 D+4</th><th>复习 D+7</th><th>复习 D+15</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>块 1</td>
+            <td>第1天<span class="lbl">2026-08-16 周日</span></td>
+            
+            <td>2026-08-17<span class="lbl">第2天</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 2</td>
+            <td>第1天<span class="lbl">2026-08-16 周日</span></td>
+            
+            <td>2026-08-17<span class="lbl">第2天</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 3</td>
+            <td>第1天<span class="lbl">2026-08-16 周日</span></td>
+            
+            <td>2026-08-17<span class="lbl">第2天</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 4</td>
+            <td>第1天<span class="lbl">2026-08-16 周日</span></td>
+            
+            <td>2026-08-17<span class="lbl">第2天</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 5</td>
+            <td>第2天<span class="lbl">2026-08-17 周一</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-09-01<span class="lbl">第17天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 6</td>
+            <td>第2天<span class="lbl">2026-08-17 周一</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-09-01<span class="lbl">第17天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 7</td>
+            <td>第2天<span class="lbl">2026-08-17 周一</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-09-01<span class="lbl">第17天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 8</td>
+            <td>第2天<span class="lbl">2026-08-17 周一</span></td>
+            
+            <td>2026-08-18<span class="lbl">第3天</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-09-01<span class="lbl">第17天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 9</td>
+            <td>第3天<span class="lbl">2026-08-18 周二</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-09-02<span class="lbl">第18天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 10</td>
+            <td>第3天<span class="lbl">2026-08-18 周二</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-09-02<span class="lbl">第18天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 11</td>
+            <td>第3天<span class="lbl">2026-08-18 周二</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-09-02<span class="lbl">第18天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 12</td>
+            <td>第3天<span class="lbl">2026-08-18 周二</span></td>
+            
+            <td>2026-08-19<span class="lbl">第4天</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-09-02<span class="lbl">第18天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 13</td>
+            <td>第4天<span class="lbl">2026-08-19 周三</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-09-03<span class="lbl">第19天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 14</td>
+            <td>第4天<span class="lbl">2026-08-19 周三</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-09-03<span class="lbl">第19天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 15</td>
+            <td>第4天<span class="lbl">2026-08-19 周三</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-09-03<span class="lbl">第19天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 16</td>
+            <td>第4天<span class="lbl">2026-08-19 周三</span></td>
+            
+            <td>2026-08-20<span class="lbl">第5天</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-09-03<span class="lbl">第19天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 17</td>
+            <td>第5天<span class="lbl">2026-08-20 周四</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-09-04<span class="lbl">第20天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 18</td>
+            <td>第5天<span class="lbl">2026-08-20 周四</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-09-04<span class="lbl">第20天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 19</td>
+            <td>第5天<span class="lbl">2026-08-20 周四</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-09-04<span class="lbl">第20天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 20</td>
+            <td>第5天<span class="lbl">2026-08-20 周四</span></td>
+            
+            <td>2026-08-21<span class="lbl">第6天</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-09-04<span class="lbl">第20天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 21</td>
+            <td>第6天<span class="lbl">2026-08-21 周五</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-09-05<span class="lbl">第21天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 22</td>
+            <td>第6天<span class="lbl">2026-08-21 周五</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-09-05<span class="lbl">第21天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 23</td>
+            <td>第6天<span class="lbl">2026-08-21 周五</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-09-05<span class="lbl">第21天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 24</td>
+            <td>第6天<span class="lbl">2026-08-21 周五</span></td>
+            
+            <td>2026-08-22<span class="lbl">第7天</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-09-05<span class="lbl">第21天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 25</td>
+            <td>第7天<span class="lbl">2026-08-22 周六</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-29<span class="lbl">第14天</span></td>
+            
+            <td>2026-09-06<span class="lbl">第22天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 26</td>
+            <td>第7天<span class="lbl">2026-08-22 周六</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-29<span class="lbl">第14天</span></td>
+            
+            <td>2026-09-06<span class="lbl">第22天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 27</td>
+            <td>第7天<span class="lbl">2026-08-22 周六</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-29<span class="lbl">第14天</span></td>
+            
+            <td>2026-09-06<span class="lbl">第22天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 28</td>
+            <td>第7天<span class="lbl">2026-08-22 周六</span></td>
+            
+            <td>2026-08-23<span class="lbl">第8天</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-29<span class="lbl">第14天</span></td>
+            
+            <td>2026-09-06<span class="lbl">第22天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 29</td>
+            <td>第8天<span class="lbl">2026-08-23 周日</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-08-30<span class="lbl">第15天</span></td>
+            
+            <td>2026-09-07<span class="lbl">第23天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 30</td>
+            <td>第8天<span class="lbl">2026-08-23 周日</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-08-30<span class="lbl">第15天</span></td>
+            
+            <td>2026-09-07<span class="lbl">第23天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 31</td>
+            <td>第8天<span class="lbl">2026-08-23 周日</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-08-30<span class="lbl">第15天</span></td>
+            
+            <td>2026-09-07<span class="lbl">第23天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 32</td>
+            <td>第8天<span class="lbl">2026-08-23 周日</span></td>
+            
+            <td>2026-08-24<span class="lbl">第9天</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-08-30<span class="lbl">第15天</span></td>
+            
+            <td>2026-09-07<span class="lbl">第23天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 33</td>
+            <td>第9天<span class="lbl">2026-08-24 周一</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+            <td>2026-09-08<span class="lbl">第24天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 34</td>
+            <td>第9天<span class="lbl">2026-08-24 周一</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+            <td>2026-09-08<span class="lbl">第24天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 35</td>
+            <td>第9天<span class="lbl">2026-08-24 周一</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+            <td>2026-09-08<span class="lbl">第24天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 36</td>
+            <td>第9天<span class="lbl">2026-08-24 周一</span></td>
+            
+            <td>2026-08-25<span class="lbl">第10天</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-28<span class="lbl">第13天</span></td>
+            
+            <td>2026-08-31<span class="lbl">第16天</span></td>
+            
+            <td>2026-09-08<span class="lbl">第24天</span></td>
+            
+          </tr>
+          
+          <tr>
+            <td>块 37</td>
+            <td>第10天<span class="lbl">2026-08-25 周二</span></td>
+            
+            <td>2026-08-26<span class="lbl">第11天</span></td>
+            
+            <td>2026-08-27<span class="lbl">第12天</span></td>
+            
+            <td>2026-08-29<span class="lbl">第14天</span></td>
+            
+            <td>2026-09-01<span class="lbl">第17天</span></td>
+            
+            <td>2026-09-09<span class="lbl">第25天</span></td>
+            
+          </tr>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── 每日打卡清单 ── -->
+  <section class="card" id="daily">
+    <h2>✅ 每日打卡清单</h2>
+    <p class="hint-line">点一下块号打卡完成，进度自动保存到本机。每天「新背」若干块 + 复习之前背过的块。</p>
+    <div class="cpd-row">
+      <label>每天新背</label>
+      <select id="cpd-select" onchange="setCpd(this.value)">
+        
+        <option value="1" >1 块</option>
+        
+        <option value="2" >2 块</option>
+        
+        <option value="3" >3 块</option>
+        
+        <option value="4" selected>4 块</option>
+        
+        <option value="5" >5 块</option>
+        
+        <option value="6" >6 块</option>
+        
+      </select>
+      <div class="progress"><div class="progress-fill" id="progress-fill"></div></div>
+      <span id="progress-text">0/0</span>
+    </div>
+    <div id="daily-list"></div>
+  </section>
+
+  <div class="footer">背诵宝 · 意群分块 + 艾宾浩斯复习 · 学习进度保存在本机浏览器</div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var CFG = {
+    materialId: "English_auto-generated_How_to_Be_Disgustingly_Articulate_And",
+    chunkCount: 37,
+    startDate: "2026-08-16",
+    intervals: [1, 2, 4, 7, 15],
+    defaultCpd: 4
+  };
+  var WEEKDAYS = ["周日","周一","周二","周三","周四","周五","周六"];
+
+  function parseISO(s){ var p=s.split("-"); return new Date(+p[0],+p[1]-1,+p[2]); }
+  function addDays(d,n){ var r=new Date(d); r.setDate(r.getDate()+n); return r; }
+  function iso(d){ return d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2); }
+  function fmt(d){ return (d.getMonth()+1)+"月"+d.getDate()+"日"; }
+
+  function buildSchedule(cpd){
+    var perChunk=[], maxDay=0, i, day;
+    for(i=0;i<CFG.chunkCount;i++){
+      var learnDay=Math.floor(i/cpd)+1;
+      var reviewDays=CFG.intervals.map(function(d){return learnDay+d;});
+      maxDay=Math.max(maxDay, learnDay, reviewDays[reviewDays.length-1]);
+      perChunk.push({index:i+1, learnDay:learnDay, reviewDays:reviewDays});
+    }
+    var daily=[];
+    for(day=1;day<=maxDay;day++){
+      daily.push({
+        day:day,
+        learn: perChunk.filter(function(c){return c.learnDay===day;}).map(function(c){return c.index;}),
+        review: perChunk.filter(function(c){return c.reviewDays.indexOf(day)!==-1;}).map(function(c){return c.index;})
+      });
+    }
+    return {perChunk:perChunk, daily:daily, totalDays:maxDay};
+  }
+
+  function storageKey(cpd){ return "recite-"+CFG.materialId+"-cpd"+cpd; }
+  function loadChecks(cpd){
+    try{ return new Set(JSON.parse(localStorage.getItem(storageKey(cpd))||"[]")); }
+    catch(e){ return new Set(); }
+  }
+  function saveChecks(cpd,set){ localStorage.setItem(storageKey(cpd), JSON.stringify(Array.from(set))); }
+  function chipKey(day,idx,type){ return day+":"+idx+":"+type; }
+
+  function todayIndex(){
+    var diff = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate()) - parseISO(CFG.startDate);
+    return Math.floor(diff/86400000)+1;
+  }
+
+  function renderDaily(cpd){
+    var data=buildSchedule(cpd), checks=loadChecks(cpd);
+    var list=document.getElementById("daily-list");
+    list.innerHTML="";
+    var total=0, done=0, today=todayIndex();
+
+    data.daily.forEach(function(dp){
+      var card=document.createElement("div");
+      card.className="day-card"+(dp.day===today?" today":"");
+      var date=addDays(parseISO(CFG.startDate), dp.day-1);
+
+      var head=document.createElement("div");
+      head.className="day-head";
+      var no=document.createElement("span"); no.className="day-no"; no.textContent="第 "+dp.day+" 天";
+      var dt=document.createElement("span"); dt.className="day-date"; dt.textContent=fmt(date)+" "+WEEKDAYS[date.getDay()];
+      head.appendChild(no); head.appendChild(dt);
+      card.appendChild(head);
+
+      function addRow(label,cls,indices,type){
+        var row=document.createElement("div");
+        row.className="day-row";
+        var lab=document.createElement("span"); lab.className="row-label "+cls; lab.textContent=label;
+        row.appendChild(lab);
+        if(!indices.length){
+          var e=document.createElement("span"); e.className="empty-day"; e.textContent="今日无"+label;
+          row.appendChild(e);
+        } else {
+          indices.forEach(function(idx){
+            var key=chipKey(dp.day,idx,type), checked=checks.has(key);
+            total++;
+            if(checked) done++;
+            var chip=document.createElement("button");
+            chip.className="chip "+cls+(checked?" on":"");
+            chip.textContent="块 "+idx;
+            chip.onclick=function(){
+              if(checks.has(key)) checks.delete(key); else checks.add(key);
+              saveChecks(cpd,checks);
+              renderDaily(cpd);
+            };
+            row.appendChild(chip);
+          });
+        }
+        card.appendChild(row);
+      }
+
+      addRow("新背","new",dp.learn,"new");
+      addRow("复习","review",dp.review,"review");
+      list.appendChild(card);
+    });
+
+    var fill=document.getElementById("progress-fill");
+    fill.style.width = total? (done/total*100)+"%" : "0%";
+    document.getElementById("progress-text").textContent=done+"/"+total;
+  }
+
+  window.setCpd=function(v){ renderDaily(parseInt(v,10)||2); };
+  renderDaily(CFG.defaultCpd);
+})();
+
+function toggleBlank(btn){
+  var card=btn.closest(".chunk");
+  card.classList.toggle("blanked");
+  btn.textContent = card.classList.contains("blanked") ? "👀 显示原文" : "🙈 遮住自测";
+}
+</script>
+<script>
+if ('serviceWorker' in navigator) { window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); }); }
+</script>
+</body>
+</html>
