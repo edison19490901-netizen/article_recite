@@ -162,6 +162,18 @@ def manifest():
     return send_file(str(Path(__file__).parent / "manifest.json"), mimetype="application/json")
 
 
+@app.route("/sw.js")
+def service_worker():
+    """根路径提供 service worker（scope=根，否则 404 导致 PWA 不可安装）。
+    Service-Worker-Allowed + no-cache 保证更新能及时生效。"""
+    resp = send_file(
+        str(Path(__file__).parent / "static" / "sw.js"), mimetype="text/javascript"
+    )
+    resp.headers["Service-Worker-Allowed"] = "/"
+    resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
 @app.route("/process", methods=["POST"])
 def process():
     url = request.form.get("url", "").strip()
