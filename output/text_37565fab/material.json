@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "material_id": "text_37565fab",
+    "title": "行动胜于空谈",
+    "language": "zh",
+    "source_type": "article",
+    "truncated": false,
+    "created": "2026-08-16"
+  },
+  "material": {
+    "title_suggested": "行动胜于空谈",
+    "language": "zh",
+    "advice": "材料简短，但包含因果、转折等逻辑关系。建议先理解每块的核心意思，再按顺序记忆。注意第二块中的'不是...而是...'结构，可先记'平庸'和'出发'两个关键词。最后一块可对比'一小步'和'一大步'来强化记忆。",
+    "chunks": [
+      {
+        "index": 1,
+        "text": "行动胜于空谈。",
+        "hint": "行动胜于空谈"
+      },
+      {
+        "index": 2,
+        "text": "很多人之所以平庸，不是因为没有梦想，而是因为从未出发。",
+        "hint": "平庸原因"
+      },
+      {
+        "index": 3,
+        "text": "每个宏大的目标，都始于一个微小的第一步。",
+        "hint": "宏大始于微小"
+      },
+      {
+        "index": 4,
+        "text": "不要等待完美的时机，因为完美的时机就是现在。",
+        "hint": "完美时机"
+      },
+      {
+        "index": 5,
+        "text": "今天的一小步，胜过明天的一大步。",
+        "hint": "今日一步"
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 638,
+    "completion_tokens": 249,
+    "total_tokens": 887,
+    "cost_cny": 0.001136
+  }
+}

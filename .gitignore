@@ -1,6 +1,4 @@
 .env
 __pycache__/
 *.pyc
-output/*
-!output/English_auto-generated_How_to_Be_Disgustingly_Articulate_And/
 .DS_Store

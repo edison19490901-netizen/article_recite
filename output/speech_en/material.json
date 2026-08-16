@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "material_id": "speech_en",
+    "title": "Excellence is a Habit",
+    "language": "en",
+    "source_type": "article",
+    "truncated": false,
+    "created": "2026-08-16"
+  },
+  "material": {
+    "title_suggested": "Excellence is a Habit",
+    "language": "en",
+    "advice": "This material is short and punchy, with parallel structures and contrasts. Watch the semicolon in chunk 7; pause slightly. Use the keywords 'habit', 'key', 'love', 'started', 'clock' as anchors. Recite each chunk as a breath unit, and link them by the theme of action and persistence.",
+    "chunks": [
+      {
+        "index": 1,
+        "text": "We are what we repeatedly do.",
+        "hint": "repeatedly do"
+      },
+      {
+        "index": 2,
+        "text": "Excellence, then, is not an act, but a habit.",
+        "hint": "not act but habit"
+      },
+      {
+        "index": 3,
+        "text": "Success is not the key to happiness.",
+        "hint": "success not key"
+      },
+      {
+        "index": 4,
+        "text": "Happiness is the key to success.",
+        "hint": "happiness key"
+      },
+      {
+        "index": 5,
+        "text": "If you love what you are doing, you will be successful.",
+        "hint": "love doing"
+      },
+      {
+        "index": 6,
+        "text": "The secret of getting ahead is getting started.",
+        "hint": "getting ahead"
+      },
+      {
+        "index": 7,
+        "text": "Don't watch the clock; do what it does.",
+        "hint": "watch clock"
+      },
+      {
+        "index": 8,
+        "text": "Keep going.",
+        "hint": "keep going"
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 656,
+    "completion_tokens": 325,
+    "total_tokens": 981,
+    "cost_cny": 0.001306
+  }
+}
