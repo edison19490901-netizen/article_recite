@@ -97,7 +97,26 @@ article_recite/
 │       └── recite.html.j2 # 背诵看板模板（含交互 JS）
 ```
 
-## Render 部署
+## Render 部署 + 安装到手机
+
+仓库已包含 `render.yaml`（Blueprint），Render 部署接近一键完成：
+
+1. 打开 https://dashboard.render.com ，用邮箱或 GitHub 注册登录（免费）
+2. 点右上角 **New +** → **Blueprint**
+3. 首次需授权 GitHub：Connect account → 选择仓库 `edison19490901-netizen/article_recite` → 授权
+4. Render 识别到 `render.yaml`，列出 `article-recite` 服务 → 点 **Apply** 开始部署（约 2-5 分钟）
+5. 部署完成后：
+   - 服务页 → **Environment** → 添加变量 `DEEPSEEK_API_KEY` = 你的 API Key → **Save** → 顶部 **Manual Deploy → Deploy latest commit** 重启生效
+   - 服务顶部拿到 HTTPS 地址，形如 `https://article-recite.onrender.com`
+6. **手机安装为 App（图标 = recite.png）**：
+   - **Android（Chrome）**：手机打开该网址 → 菜单 ⋮ → 「添加到主屏幕 / 安装应用」
+   - **iPhone（Safari）**：打开网址 → 分享 → 「添加到主屏幕」
+   - PWA 已配置好：多尺寸 recite.png 图标（含 Android 自适应 maskable）、Service Worker 离线可用
+
+> 免费版 Render 服务空闲 15 分钟后休眠，重新打开约需 30 秒唤醒，属正常现象。
+> 国内访问 render.com 一般可用；若太慢可换 Zeabur 等平台，接同一个 GitHub 仓库即可。
+
+### 传统配置项（手动部署时用）
 
 | 配置项 | 值 |
 |--------|-----|
