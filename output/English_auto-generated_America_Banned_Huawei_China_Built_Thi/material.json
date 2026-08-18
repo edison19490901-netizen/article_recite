@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "material_id": "English_auto-generated_America_Banned_Huawei_China_Built_Thi",
+    "title": "America Banned Huawei. China Built This Instead",
+    "language": "en",
+    "source_type": "subtitle",
+    "truncated": false,
+    "created": "2026-08-18"
+  },
+  "material": {
+    "title_suggested": "America Banned Huawei. China Built This Instead",
+    "language": "en",
+    "advice": "This material is dense with brand names and parallel structures. Practice chunk 13 (car brands) and chunk 18 (app functions) as lists to lock them in. For long chunks like 4 and 14, break them into two breaths at the commas. Use the hint keywords as anchors to recall each chunk's core idea.",
+    "chunks": [
+      {
+        "index": 1,
+        "text": "America spent years trying to destroy this company. Huawei survived, and what they've built should make every American tech executive uncomfortable.",
+        "hint": "America tried, Huawei survived"
+      },
+      {
+        "index": 2,
+        "text": "No Google services, no American chips, no access to the technologies Washington thought they needed to survive.",
+        "hint": "No Google, no chips"
+      },
+      {
+        "index": 3,
+        "text": "What did Huawei do? They built a trifold phone, now on its second generation. People lined up for it across China.",
+        "hint": "Trifold phone, second gen"
+      },
+      {
+        "index": 4,
+        "text": "Foldables, flip phones, tablets, laptops, and then this, a massive foldable screen that goes from tablet to laptop, closes completely flat, and runs a virtual keyboard on one half of the screen.",
+        "hint": "Foldable screen, virtual keyboard"
+      },
+      {
+        "index": 5,
+        "text": "And then, you snap on a physical keyboard to make it feel like a laptop entirely. Apple is reportedly working on a clamshell foldable.",
+        "hint": "Physical keyboard, Apple clamshell"
+      },
+      {
+        "index": 6,
+        "text": "Huawei has been selling one for years, but phones are just the start. Huawei makes home products, audio, and cars.",
+        "hint": "Huawei beyond phones"
+      },
+      {
+        "index": 7,
+        "text": "Aito for mass market, Maystro for luxury. Positioned to go toe-to-toe with Maybach.",
+        "hint": "Aito, Maystro, Maybach"
+      },
+      {
+        "index": 8,
+        "text": "Technology inside, interior, exterior, all high-end.",
+        "hint": "High-end tech, interior, exterior"
+      },
+      {
+        "index": 9,
+        "text": "Meanwhile, Oppo, a brand most Americans have never heard of, currently makes what many consider the best foldable phone you can buy anywhere on Earth.",
+        "hint": "Oppo best foldable"
+      },
+      {
+        "index": 10,
+        "text": "And they just dropped this, a 300 mm teleconverter lens that physically snaps onto the phone.",
+        "hint": "300mm teleconverter lens"
+      },
+      {
+        "index": 11,
+        "text": "No separate camera, no bag to carry, just a phone that becomes a professional telephoto system in seconds.",
+        "hint": "Phone becomes telephoto"
+      },
+      {
+        "index": 12,
+        "text": "Step outside onto the streets of Shanghai. 90% of the cars, brands you've never heard of.",
+        "hint": "Shanghai streets, unknown brands"
+      },
+      {
+        "index": 13,
+        "text": "Not Toyota, Ford, or Tesla, but Li Auto, Zeeker, Yangwang, Xpeng, BYD, and dozens more.",
+        "hint": "Chinese car brands list"
+      },
+      {
+        "index": 14,
+        "text": "Then, there is Xiaomi, the phone company whose SU7 sports car has the proportions of a Porsche Taycan, costing a fraction of what a Taycan costs, and is outselling Tesla's Model 3 in China and Europe.",
+        "hint": "Xiaomi SU7 vs Taycan"
+      },
+      {
+        "index": 15,
+        "text": "A phone company outselling Tesla.",
+        "hint": "Phone company beats Tesla"
+      },
+      {
+        "index": 16,
+        "text": "And deep in Shanghai, End of Stay Studios went viral building mini Porsche 911S, Defenders, Broncos, fully functional, hitting 140 km/h, used for food delivery.",
+        "hint": "Mini cars, food delivery"
+      },
+      {
+        "index": 17,
+        "text": "And here is what daily life inside China actually looks like right now. Rides across Shanghai cost around $1.",
+        "hint": "Daily life, $1 rides"
+      },
+      {
+        "index": 18,
+        "text": "Nobody uses cash or credit cards. Everything runs through Alipay and WeChat apps that function as payment, restaurant menu, transit pass, scooter rental, and delivery services.",
+        "hint": "Alipay and WeChat everything"
+      },
+      {
+        "index": 19,
+        "text": "Elon Musk has spent years promising America an everything app. China has had two of them for over a decade.",
+        "hint": "Musk's everything app vs China"
+      },
+      {
+        "index": 20,
+        "text": "Made in China used to mean cheap. Walk through Shanghai in 2026 and you won't find cheap.",
+        "hint": "Made in China not cheap"
+      },
+      {
+        "index": 21,
+        "text": "You will find a country that kept building while the rest of the world was still debating whether to take it seriously.",
+        "hint": "Kept building, world debated"
+      },
+      {
+        "index": 22,
+        "text": "The gap is not closing. It's moving in one direction.",
+        "hint": "Gap moving one direction"
+      }
+    ]
+  },
+  "usage": {
+    "prompt_tokens": 1232,
+    "completion_tokens": 1142,
+    "total_tokens": 2374,
+    "cost_cny": 0.003516
+  }
+}
